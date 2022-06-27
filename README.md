@@ -52,9 +52,7 @@ git commit -m "first commit"
 
 ## TODO preview it somewhere like vercel
 
-[^1]:
-
-Installing the cli version means you no longer have to use the firefox extension as below...
+[^1]: Installing the cli version means you no longer have to use the firefox extension as below...
 
 1. Install this Firefox extension: https://github.com/gildas-lormeau/SingleFile
 1. Use the extension to download the html file
