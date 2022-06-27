@@ -19,17 +19,20 @@ git commit -m "first commit"
 
 ## Generate singleFileExport.html as basis for the mockup
 
-1. Install peer dependency single-filez-cli: `https://github.com/gildas-lormeau/single-filez-cli#run` [^bignote]
+1. For convenience, or if the site/page is authenticated, use the Firefox extension to download the page as a ZIP: `https://addons.mozilla.org/firefox/addon/singlefilez`
+1. OR, assuming the page is public you can install peer dependency single-filez-cli: `https://github.com/gildas-lormeau/single-filez-cli#run` [^bignote]
     1. npm install -g "gildas-lormeau/single-filez-cli" - if this doesn't work:
         1. cd C:\Users\<username>\AppData\Roaming\npm\node_modules
         1. npm install "gildas-lormeau/single-filez-cli"
         1. npm i
     1. add "C:\Users\<username>\AppData\Roaming\npm\node_modules\single-filez-cli" to your environment variables PATH
+    1. `cd public`
+    1. TODO: it only works on public pages - if you need to access password protected then look at using cookies option in puppeteer?
     1. run it - probably need to use the browser executable option to find chrome `single-filez https://www.ibc.com.au export.html --browser-executable-path "C:\Program Files (x86)\Google\Chrome\Application\Chrome.exe"`
-    1. Open `export.html` in a browser and check it works
-    1. Rename `export.html` to `export.zip`
-    1. unzip the contents of the zip - so that the assets are saved in the `public` directory
-    1. move the `index.html` file to the root
+1. Open the exported zip file in a browser and check it works
+1. Rename `export.html` to `export.zip`
+1. unzip the contents of the zip - so that the assets are saved in the `public` directory
+1. move the `index.html` file to the root
 1. Insert svelte script into body where mockup element should appear in dom
 
 ```
@@ -52,7 +55,7 @@ git commit -m "first commit"
 
 ## TODO preview it somewhere like vercel
 
-[^bignote]: Installing the cli version means you no longer have to use the firefox extension as below...
+[^bignote]: Installing the cli version means you no longer have to use the 2nd firefox extension as below...
 
     1. Install this Firefox extension: https://github.com/gildas-lormeau/SingleFile
     1. Use the extension to download the html file
