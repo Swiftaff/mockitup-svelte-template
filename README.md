@@ -54,8 +54,8 @@ git commit -m "first commit"
 
 [^bignote]: Installing the cli version means you no longer have to use the firefox extension as below...
 
-1. Install this Firefox extension: https://github.com/gildas-lormeau/SingleFile
-1. Use the extension to download the html file
-    1. Warning - the file will probably be very large and slow to edit as it includes encoded images.
-    1. Warning - the file will reformat if using, e.g. Prettier - again taking a long time to save
-    1. Warning - the file may contain slightly broken html - use VS Code 'Problems' tab to discover and fix these
+    1. Install this Firefox extension: https://github.com/gildas-lormeau/SingleFile
+    1. Use the extension to download the html file
+        1. Warning - the file will probably be very large and slow to edit as it includes encoded images.
+        1. Warning - the file will reformat if using, e.g. Prettier - again taking a long time to save
+        1. Warning - the file may contain slightly broken html - use VS Code 'Problems' tab to discover and fix these
