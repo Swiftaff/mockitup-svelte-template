@@ -19,14 +19,17 @@ git commit -m "first commit"
 
 ## Generate singleFileExport.html as basis for the mockup
 
-1. Install this Firefox extension: https://github.com/gildas-lormeau/SingleFile
-1. Use the extension to download the html file
-1. Open it in a browser and check it works
-1. Save it over ./index.html
-1. TODO - look at using the zip version instead to retain assets as files
-    1. Warning - the file will probably be very large and slow to edit as it includes encoded images.
-    1. Warning - the file will reformat if using, e.g. Prettier - again taking a long time to save
-    1. Warning - the file may contain slightly broken html - use VS Code 'Problems' tab to discover and fix these
+1. Install peer dependency single-filez-cli: `https://github.com/gildas-lormeau/single-filez-cli#run` [^1]
+    1. npm install -g "gildas-lormeau/single-filez-cli" - if this doesn't work:
+        1. cd C:\Users\<username>\AppData\Roaming\npm\node_modules
+        1. npm install "gildas-lormeau/single-filez-cli"
+        1. npm i
+    1. add "C:\Users\<username>\AppData\Roaming\npm\node_modules\single-filez-cli" to your environment variables PATH
+    1. run it - probably need to use the browser executable option to find chrome `single-filez https://www.ibc.com.au export.html --browser-executable-path "C:\Program Files (x86)\Google\Chrome\Application\Chrome.exe"`
+    1. Open `export.html` in a browser and check it works
+    1. Rename `export.html` to `export.zip`
+    1. unzip the contents of the zip - so that the assets are saved in the `public` directory
+    1. move the `index.html` file to the root
 1. Insert svelte script into body where mockup element should appear in dom
 
 ```
@@ -42,8 +45,19 @@ git commit -m "first commit"
 
 ## Start designing your app
 
+1. git commit a benchmark of the current page
 1. Edit svelte files in the ./src directory
-2. git commit each milestone achievement as you go
-3. Manually take screengrabs / copy markup as needed for your project
+1. git commit each milestone achievement as you go
+1. Manually take screengrabs / copy markup as needed for your project
 
 ## TODO preview it somewhere like vercel
+
+[^1]:
+
+Installing the cli version means you no longer have to use the firefox extension as below...
+
+1. Install this Firefox extension: https://github.com/gildas-lormeau/SingleFile
+1. Use the extension to download the html file
+    1. Warning - the file will probably be very large and slow to edit as it includes encoded images.
+    1. Warning - the file will reformat if using, e.g. Prettier - again taking a long time to save
+    1. Warning - the file may contain slightly broken html - use VS Code 'Problems' tab to discover and fix these
