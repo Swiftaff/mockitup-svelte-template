@@ -19,7 +19,7 @@ git commit -m "first commit"
 
 ## Generate singleFileExport.html as basis for the mockup
 
-1. Install peer dependency single-filez-cli: `https://github.com/gildas-lormeau/single-filez-cli#run` [^1]
+1. Install peer dependency single-filez-cli: `https://github.com/gildas-lormeau/single-filez-cli#run` [^bignote]
     1. npm install -g "gildas-lormeau/single-filez-cli" - if this doesn't work:
         1. cd C:\Users\<username>\AppData\Roaming\npm\node_modules
         1. npm install "gildas-lormeau/single-filez-cli"
@@ -52,7 +52,7 @@ git commit -m "first commit"
 
 ## TODO preview it somewhere like vercel
 
-[^1]: Installing the cli version means you no longer have to use the firefox extension as below...
+[^bignote]: Installing the cli version means you no longer have to use the firefox extension as below...
 
 1. Install this Firefox extension: https://github.com/gildas-lormeau/SingleFile
 1. Use the extension to download the html file
