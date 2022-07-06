@@ -44,8 +44,12 @@ git commit -m "first commit"
 ## Run dev server
 
 1. `npm run dev`
+1. Vite may display errors before it works - mostly due to malformed html from the exporter or the original page, fix these e.g.
+   - Missing start <head>
+   - Missing end </body></html>
 2. visit dev site as shown in terminal, e.g. `localhost:3000`
 3. Confirm it displays the default svelte app in the right place - git commit new benchmark
+   - if not, check the console - probably need to simply remove a overly restrictive `<meta http-equiv=content-security-policy>`
 
 ## Start designing your app
 
