@@ -7,6 +7,7 @@ A test to set up a degit template for quick creation of Svelte mockups embedded 
 ```
 // create new directory
 npx degit swiftaff/mockitup-svelte-template <new-project-directory-name>
+cd <new-project-directory-name>
 
 // install node_modules dependencies
 npm i
